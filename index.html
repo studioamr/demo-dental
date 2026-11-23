@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calete Dental Studio · Preview</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F5F1;--ink:#14231F;--muted:#5F6B67;--acc:#1F6B5C;--acc2:#E6EFEC;--line:#E2DED6}
+*{margin:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,sans-serif}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:0 auto;padding:0 24px}
+.note{background:var(--ink);color:#cfd8d5;font-size:13px;text-align:center;padding:8px 16px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:500 22px Fraunces,serif;letter-spacing:-.01em}.logo span{color:var(--acc)}
+.nl{display:flex;gap:28px;align-items:center;font-size:15px;color:var(--muted)}
+.lang{border:1px solid var(--line);border-radius:99px;padding:6px 12px;font:600 13px Inter;cursor:pointer;background:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:#fff;border-radius:99px;padding:14px 24px;font-weight:600;font-size:15px}
+.btn.o{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn svg{width:18px;height:18px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:56px 0 88px}
+.k{font:600 12px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+h1{font:400 clamp(42px,6vw,72px)/1.02 Fraunces,serif;letter-spacing:-.02em;margin:18px 0 22px}
+h1 em{color:var(--acc)}
+.lead{color:var(--muted);font-size:19px;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.trust{display:flex;gap:28px;margin-top:40px;font-size:14px;color:var(--muted)}
+.trust b{display:block;font:500 26px Fraunces,serif;color:var(--ink)}
+.ph{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(160deg,#dfe9e5,#c3d6cf);position:relative;overflow:hidden}
+.ph .tag{position:absolute;left:20px;bottom:20px;right:20px;background:#fff;border-radius:18px;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 20px 40px -20px rgba(20,35,31,.3)}
+.ph .tag small{display:block;color:var(--muted);font-size:13px}
+.ph .tooth{position:absolute;inset:0;display:grid;place-items:center}
+.ph .tooth svg{width:46%;opacity:.55}
+section{padding:88px 0;border-top:1px solid var(--line)}
+h2{font:400 clamp(32px,4vw,48px)/1.08 Fraunces,serif;letter-spacing:-.015em;margin:14px 0 40px;max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px}
+.card h3{font:500 26px Fraunces,serif;margin-bottom:10px}
+.card p{color:var(--muted)}
+.card ul{list-style:none;margin-top:18px;display:grid;gap:8px;font-size:15px}
+.card li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--acc);margin-right:12px;vertical-align:middle}
+.ba{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.case{border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.case .img{display:grid;grid-template-columns:1fr 1fr;height:200px}
+.case .img div{display:grid;place-items:center;font:600 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+.case .img div:first-child{background:#9aa7a3}.case .img div:last-child{background:var(--acc)}
+.case p{padding:16px 20px;font-size:15px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{padding:28px;border-radius:20px;background:var(--acc2)}
+.step::before{counter-increment:s;content:"0" counter(s);font:500 34px Fraunces,serif;color:var(--acc)}
+.step h4{font:600 18px Inter;margin:10px 0 6px}.step p{color:var(--muted);font-size:15px}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.map{aspect-ratio:4/3;border-radius:22px;background:repeating-linear-gradient(0deg,#e9e5dd 0 1px,transparent 1px 40px),repeating-linear-gradient(90deg,#e9e5dd 0 1px,transparent 1px 40px),#f1eee8;position:relative;border:1px solid var(--line)}
+.map i{position:absolute;left:52%;top:44%;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--acc);box-shadow:0 0 0 8px rgba(31,107,92,.15)}
+.info dl{display:grid;gap:18px;margin:24px 0 30px}.info dt{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+footer{padding:40px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.35)}
+.wa svg{width:28px;height:28px;fill:#fff}
+@media(max-width:860px){.hero,.loc{grid-template-columns:1fr}.cards,.ba,.steps{grid-template-columns:1fr}.nl a{display:none}.ph{aspect-ratio:4/3}}
+</style></head><body>
+<div class="note" data-es="Preview de diseño para Calete Dental Studio · contenido de muestra" data-en="Design preview for Calete Dental Studio · sample content"></div>
+<div class="w">
+<nav><div class="logo">Calete <span>Dental</span> Studio</div>
+<div class="nl"><a href="#tratamientos" data-es="Tratamientos" data-en="Treatments"></a><a href="#casos" data-es="Casos" data-en="Cases"></a><a href="#ubicacion" data-es="Ubicación" data-en="Location"></a><button class="lang" id="lg">EN</button></div></nav>
+
+<header class="hero">
+<div><div class="k" data-es="Implantes y periodoncia · Tijuana" data-en="Implants & periodontics · Tijuana"></div>
+<h1 data-es="Tu sonrisa,<br>bien <em>cimentada.</em>" data-en="A smile built<br>on <em>solid ground.</em>"></h1>
+<p class="lead" data-es="Clínica especializada en implantes dentales y salud de encías, a minutos de la garita. Atendemos pacientes de México y San Diego en español e inglés." data-en="A specialist clinic for dental implants and gum health, minutes from the border. We care for patients from Mexico and San Diego in English and Spanish."></p>
+<div class="cta"><a class="btn wa-link" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg><span data-es="Agendar por WhatsApp" data-en="Book on WhatsApp"></span></a><a class="btn o" href="#tratamientos" data-es="Ver tratamientos" data-en="See treatments"></a></div>
+<div class="trust"><div><b>ES · EN</b><span data-es="Atención bilingüe" data-en="Bilingual care"></span></div><div><b>10 min</b><span data-es="de San Ysidro" data-en="from San Ysidro"></span></div></div>
+</div>
+<div class="ph"><div class="tooth"><svg viewBox="0 0 64 64" fill="none" stroke="#1F6B5C" stroke-width="1.6"><path d="M20 8c-7 0-12 5-12 13 0 8 4 12 6 22 1.5 8 3 13 6 13s3.5-8 5-14c1-4 2-5 7-5s6 1 7 5c1.5 6 2 14 5 14s4.5-5 6-13c2-10 6-14 6-22 0-8-5-13-12-13-5 0-7 3-12 3s-7-3-12-3Z"/></svg></div>
+<div class="tag"><div><small data-es="Próxima cita disponible" data-en="Next available appointment"></small><b data-es="Mañana · 10:30 am" data-en="Tomorrow · 10:30 am"></b></div><a class="btn wa-link" href="#" style="padding:10px 16px" data-es="Apartar" data-en="Book"></a></div></div>
+</header>
+
+<section id="tratamientos"><div class="k" data-es="Tratamientos" data-en="Treatments"></div>
+<h2 data-es="Dos especialidades, hechas con el tiempo que requieren." data-en="Two specialties, done with the time they deserve."></h2>
+<div class="cards">
+<div class="card"><h3 data-es="Implantes dentales" data-en="Dental implants"></h3><p data-es="Reemplazo de una o varias piezas con resultados naturales y duraderos." data-en="Replace one or several teeth with natural, long-lasting results."></p>
+<ul><li data-es="Implante unitario" data-en="Single implant"></li><li data-es="Puentes sobre implantes" data-en="Implant-supported bridges"></li><li data-es="Arcada completa (All-on-4)" data-en="Full arch (All-on-4)"></li><li data-es="Injerto óseo" data-en="Bone grafting"></li></ul></div>
+<div class="card"><h3 data-es="Periodoncia" data-en="Periodontics"></h3><p data-es="Tratamiento de encías para frenar la pérdida de dientes y cuidar tu salud." data-en="Gum treatment to stop tooth loss and protect your overall health."></p>
+<ul><li data-es="Limpieza profunda" data-en="Deep cleaning"></li><li data-es="Tratamiento de bolsas periodontales" data-en="Periodontal pocket therapy"></li><li data-es="Injerto de encía" data-en="Gum grafting"></li><li data-es="Mantenimiento periodontal" data-en="Periodontal maintenance"></li></ul></div>
+</div></section>
+
+<section id="casos"><div class="k" data-es="Antes y después" data-en="Before & after"></div>
+<h2 data-es="Resultados reales de nuestros pacientes." data-en="Real results from our patients."></h2>
+<div class="ba">
+<div class="case"><div class="img"><div data-es="Antes" data-en="Before"></div><div data-es="Después" data-en="After"></div></div><p data-es="Implante unitario · sector anterior" data-en="Single implant · front tooth"></p></div>
+<div class="case"><div class="img"><div data-es="Antes" data-en="Before"></div><div data-es="Después" data-en="After"></div></div><p data-es="Arcada completa sobre implantes" data-en="Full arch on implants"></p></div>
+<div class="case"><div class="img"><div data-es="Antes" data-en="Before"></div><div data-es="Después" data-en="After"></div></div><p data-es="Injerto de encía" data-en="Gum graft"></p></div>
+</div></section>
+
+<section><div class="k" data-es="Cómo funciona" data-en="How it works"></div>
+<h2 data-es="De tu primer mensaje a tu nueva sonrisa." data-en="From your first message to your new smile."></h2>
+<div class="steps">
+<div class="step"><h4 data-es="Escríbenos" data-en="Message us"></h4><p data-es="Mándanos un WhatsApp con tu caso. Puedes adjuntar radiografías." data-en="Send us a WhatsApp with your case. X-rays welcome."></p></div>
+<div class="step"><h4 data-es="Valoración" data-en="Evaluation"></h4><p data-es="Revisamos tu caso en clínica y te damos un plan con costo cerrado." data-en="We evaluate you in the clinic and give you a fixed-price plan."></p></div>
+<div class="step"><h4 data-es="Tratamiento" data-en="Treatment"></h4><p data-es="Agendamos tus citas para que cruces la frontera las menos veces posible." data-en="We schedule visits so you cross the border as few times as possible."></p></div>
+</div></section>
+
+<section id="ubicacion"><div class="loc">
+<div class="map"><i></i></div>
+<div class="info"><div class="k" data-es="Ubicación" data-en="Location"></div><h2 style="margin-bottom:0" data-es="A minutos de la garita." data-en="Minutes from the border."></h2>
+<dl><div><dt data-es="Dirección" data-en="Address"></dt><dd>[Dirección de la clínica], Tijuana, B.C.</dd></div><div><dt data-es="Horario" data-en="Hours"></dt><dd data-es="Lun a vie 9:00–19:00 · Sáb 9:00–14:00" data-en="Mon–Fri 9am–7pm · Sat 9am–2pm"></dd></div></dl>
+<a class="btn wa-link" href="#" data-es="Agendar por WhatsApp" data-en="Book on WhatsApp"></a></div>
+</div></section>
+</div>
+<footer><div class="w">© Calete Dental Studio · Tijuana, B.C.</div></footer>
+<a class="wa wa-link" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg></a>
+<script>
+const WA='https://wa.me/52XXXXXXXXXX?text=';
+let L=(navigator.language||'es').startsWith('en')?'en':'es';
+function set(){document.documentElement.lang=L;document.querySelectorAll('[data-es]').forEach(e=>e.innerHTML=e.dataset[L]);lg.textContent=L==='es'?'EN':'ES';
+document.querySelectorAll('.wa-link').forEach(a=>a.href=WA+encodeURIComponent(L==='es'?'Hola, quiero agendar una valoración.':'Hi, I would like to book an evaluation.'))}
+lg.onclick=()=>{L=L==='es'?'en':'es';set()};set();
+</script></body></html>
